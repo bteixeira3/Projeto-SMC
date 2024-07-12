@@ -1,0 +1,36 @@
+<<<<O GOOGLE DRIVE ESTÁ DANDO MESAGEM DE VÍRUS POR CONTA DOS EXECUTÁVEIS, NÃO EXISTE VÍRUS. SE NÃO CONSEGUIR BAIXAR, ACESSAR O LINK
+ABAIXO>>>>
+https://drive.google.com/drive/folders/13kD2GhkilEu9sGq-qV3onsDz3Aj-yyba?usp=drive_link
+
+O programa pode ser executado tanto pelo terminal quanto diretamente pelos executáveis gerados: 'echoserver.exe' e 'messageclient.exe'. O 'echoserver.exe' simula as funcionalidades destinadas ao Node 2, enquanto o 'messageclient.exe' simula as funcionalidades atribuídas ao Node 4. Primeiro deve-se executar o servidor ('echoserver') para que o cliente ('messageclient') funcione corretamente.
+
+Para compilar e executar o programa utilizando o terminal, na pasta que contém as subpastas "src" e "include", siga os seguintes comandos:
+
+1. Para compilar o 'echoserver.exe', execute:
+
+	gcc -o echoserver src/echoserver.c src/tcpserver.c -Iinclude -lws2_32
+
+2. Para compilar o 'messageclient.exe', execute:
+	
+	gcc -o messageclient src/messageclient.c src/tcpclient.c -Iinclude -lws2_32
+
+
+3. Para executar os programas compilados, utilize os seguintes comandos:
+
+	Para executar o 'echoserver':
+		
+		./echoserver
+
+
+	Para executar o 'messageclient':
+
+		./messageclient
+
+Certifique-se de estar no diretório correto ao executar esses comandos para garantir que os arquivos de código-fonte e as pastas necessárias sejam encontrados.
+
+
+
+
+
+
+
